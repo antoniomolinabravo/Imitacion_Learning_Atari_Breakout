@@ -1,0 +1,27 @@
+Se ha reemplazado la convolución por coordenadas captadas usando mascaras 
+
+se ha reducido las neuronas a 6 de entrada y 4 de salida, sin capa oculta ni relu
+
+
+
+esta pediente que aprende a imitar mejor, reduciendo la LOSS que no quiere bajar de 0.7
+
+
+
+Se habilito bloque para comparar la diferencia de los pesos en los Tensores pero no esta funcionando bien
+Ahora funciono bien, no son Tensores, son collections.OrderedDict() y dentro estan los Tensores, se presento la variacion en los ajustes durante el entrenamiento
+
+No logre reducir el LOSS, pero aprendio mas sumando mas datos
+
+Se confirma que el maestro optimo no es util para el entrenamiento por imitacion, es necesario contar con mucha diversisdad de casos, para lograr una opcion adecuada
+
+Se dejaron los casos de exito del maestro
+y se sumaron todos los casos del aprendizaje del alumno
+sumando algo mas de 42mil estados en en entrenamiento final
+a un maximo de 45 estados por punto, ya que fue limitado asi en el entrenamiento del maestro, para evitar aprende errores (ultimos 45 estados antes de un punto)
+
+
+tan sensillo como para correr en un excel, javascript o incluso un arduino usando una webcam y respodiendo comando por bluetooth
+
+Se guarda el Set de entrenamiento y los pesos del modelo para continuar mejorandolo luego
+Y Videos de alcance logrado
